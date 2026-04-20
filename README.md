@@ -1,11 +1,57 @@
-<div align="center">
+# Bitencourt & Dias Advogados
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Site oficial do escritório Bitencourt & Dias Advogados. Uma plataforma moderna, sofisticada e otimizada para mobile, desenvolvida com React, Vite e Tailwind CSS.
 
-  <h1>Built with AI Studio</h2>
+## 🚀 Tecnologias
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **React 19**
+- **Vite** (Build tool rápida)
+- **Tailwind CSS** (Estilização utilitária)
+- **Lucide React** (Ícones)
+- **Motion** (Animações fluidas)
+- **React Router** (Navegação SPA)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 📦 Como rodar localmente
 
-</div>
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/bitencourt-dias-advogados.git
+   cd bitencourt-dias-advogados
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+   O site estará disponível em `http://localhost:3000`.
+
+## 🏗️ Build para Produção
+
+Para gerar a versão otimizada do site:
+```bash
+npm run build
+```
+Os arquivos serão gerados na pasta `/dist`.
+
+## 🌐 Deploy
+
+Este projeto está pronto para ser hospedado em plataformas como **Vercel**, **Netlify** ou **GitHub Pages**.
+
+### Vercel / Netlify
+Basta conectar seu repositório do GitHub e as plataformas identificarão automaticamente o Vite como build tool.
+
+## 📂 Estrutura do Projeto
+
+- `src/components`: Componentes reutilizáveis (Navbar, Footer, Logo).
+- `src/pages`: Páginas principais (Home, Escritório, Áreas, Contato).
+- `src/index.css`: Estilização global e variáveis do tema "Sophisticated Dark".
+- `public/`: Ativos estáticos.
+
+---
+
+Desenvolvido com foco em alta performance e design premium.
