@@ -63,24 +63,6 @@ export default function Escritorio() {
                         image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
                         bio: "Especialista em gestão de conflitos e direito das famílias com atuação na unidade Bahia."
                     },
-                    { 
-                        name: "Dr. André Santos", 
-                        role: "Advogado Associado | Empresarial", 
-                        image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=800",
-                        bio: "Atuação focada em governança corporativa e fusões e aquisições (M&A)."
-                    },
-                    { 
-                        name: "Dra. Julia Costa", 
-                        role: "Advogada Associada | Cível", 
-                        image: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&q=80&w=800",
-                        bio: "Especialista em responsabilidade civil e direitos de propriedade."
-                    },
-                    { 
-                        name: "Dr. Luciano Mendes", 
-                        role: "Advogado Associado | Trabalho", 
-                        image: "https://images.unsplash.com/photo-151908518575a-34dc5f951e65?auto=format&fit=crop&q=80&w=800",
-                        bio: "Assessoria trabalhista preventiva e defesa administrativa."
-                    }
                 ].map((member, i) => (
                     <div key={i} className="card group p-0! overflow-hidden flex flex-col border-white/5">
                         <div className="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 relative">
