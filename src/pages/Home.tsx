@@ -4,29 +4,39 @@
  */
 
 import { motion } from 'motion/react';
-import { ArrowRight, Scale, Gavel, ShieldCheck, FileText, ChevronRight, Briefcase } from 'lucide-react';
+import { ArrowRight, Scale, Gavel, ShieldCheck, FileText, ChevronRight, Briefcase, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const SERVICES = [
   {
-    icon: <Gavel className="w-6 h-6" />,
+    icon: <Users className="w-6 h-6" />,
     title: "Direito do Trabalho",
-    desc: "Assessoria estratégica preventiva e contenciosa para empresas e executivos."
+    desc: "Assessoria estratégica preventiva e contenciosa para empresas e executivos.",
+    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800"
   },
   {
     icon: <Scale className="w-6 h-6" />,
     title: "Direito Cível",
-    desc: "Contratos de alta complexidade, responsabilidade civil e conflitos societários."
+    desc: "Contratos de alta complexidade, responsabilidade civil e conflitos societários.",
+    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800"
   },
   {
     icon: <FileText className="w-6 h-6" />,
     title: "Direito Tributário",
-    desc: "Planejamento fiscal estratégico para otimização de resultados empresariais."
+    desc: "Planejamento fiscal estratégico para otimização de resultados empresariais.",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
   },
   {
     icon: <Briefcase className="w-6 h-6" />,
     title: "Direito Societário",
-    desc: "Estruturação de holdings, governança corporativa e proteção de sócios."
+    desc: "Estruturação de holdings, governança corporativa e proteção de sócios.",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    icon: <ShieldCheck className="w-6 h-6" />,
+    title: "Consultoria",
+    desc: "Orientação jurídica estratégica para decisões seguras em negócios.",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
   }
 ];
 
@@ -148,22 +158,35 @@ export default function Home() {
             <h2 className="font-headline text-4xl md:text-6xl text-primary">Nossas Áreas de Atuação</h2>
           </div>
 
-          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {SERVICES.map((item, i) => (
                <motion.div 
                 key={i}
                 whileHover={{ y: -10 }}
-                className="card group hover:border-secondary/50 transition-all cursor-default"
+                className="card group hover:border-secondary/50 transition-all cursor-default p-0! overflow-hidden flex flex-col"
                >
-                 <div className="text-2xl accent serif mb-4 italic">0{i+1}</div>
-                 <h3 className="text-sm uppercase tracking-widest mb-4 font-bold text-primary group-hover:text-secondary transition-colors">{item.title}</h3>
-                 <p className="text-on-surface-variant text-xs leading-relaxed mb-8">
-                    {item.desc}
-                 </p>
-                 <Link to="/areas" className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-secondary opacity-0 group-hover:opacity-100 transition-all underline underline-offset-4">
-                    Saiba Mais
-                    <ChevronRight size={14} />
-                 </Link>
+                 <div className="relative h-48 overflow-hidden">
+                    <img 
+                        src={item.image} 
+                        alt={item.title} 
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                        referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+                    <div className="absolute top-4 left-4 text-xl accent serif italic opacity-50">
+                        0{i+1}
+                    </div>
+                 </div>
+                 <div className="p-8 flex-1 flex flex-col">
+                    <h3 className="text-sm uppercase tracking-widest mb-4 font-bold text-primary group-hover:text-secondary transition-colors">{item.title}</h3>
+                    <p className="text-on-surface-variant text-xs leading-relaxed mb-6 flex-1">
+                        {item.desc}
+                    </p>
+                    <Link to="/areas" className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold text-secondary underline underline-offset-4">
+                        Saiba Mais
+                        <ChevronRight size={14} />
+                    </Link>
+                 </div>
                </motion.div>
             ))}
           </div>

@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bitencourt & Dias Advogados | Advocacia Estratégica</title>
     <meta name="description" content="Escritório de advocacia especializado em Direito do Trabalho, Cível, Tributário e Societário com unidades em MG e BA." />
+    <script>
+      // Emergency fix for "Uncaught TypeError: Cannot set property fetch of #<Window> which has only a getter"
+      // This is often caused by polyfills in environments where window.fetch is read-only.
+      (function() {
+        var originalFetch = window.fetch;
+        if (originalFetch && Object.getOwnPropertyDescriptor(window, 'fetch') && !Object.getOwnPropertyDescriptor(window, 'fetch').writable) {
+          console.log('Protecting window.fetch to avoid polyfill errors');
+          var fetchGetter = function() { return originalFetch; };
+          try {
+            Object.defineProperty(window, 'fetch', {
+              get: fetchGetter,
+              set: function() { /* ignore assignment */ },
+              configurable: true
+            });
+          } catch (e) {}
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
