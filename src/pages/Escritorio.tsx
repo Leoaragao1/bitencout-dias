@@ -46,22 +46,22 @@ export default function Escritorio() {
                     { 
                         name: "Dr. Flávio Prates Bitencourt", 
                         role: "Sócio Sênior | Fundador", 
-                        image: "/uploads-adv/flavio-bitencourt.jpg",
-                        bio: "Lidera as decisões estratégicas e o planejamento sucessório de grandes grupos familiares."
+                        image: "backend/uploads-adv/flavio-bitencourt.jpg",
+                        bio: "Especialista em Direito do Trabalho, com atuação na defesa de interesses de empresas e seus sócios, além de atuar na área Cível e na liderança de ações estratégicas."
                     },
                     { 
                         name: "Dr. Caymmi Gomes Botelho", 
                         role: "Sócio | Diretor Jurídico", 
                         oab: "OAB/MG 171.105",
-                        image: "/uploads-adv/caymmi-botelho.jpg",
-                        bio: "Especialista em contencioso cível e contratos de alta complexidade com atuação em Minas Gerais."
+                        image: "backend/uploads-adv/caymmi-botelho.jpg",
+                        bio: "Especialista na atuação em Tribunal do Júri e Direito Penal, com atuação em Minas Gerais."
                     },
                     { 
                         name: "Dra. Tayara Magalhães Amaral", 
                         role: "Sócia | Direito Civil", 
                         oab: "OAB/BA 20.576",
                         image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
-                        bio: "Especialista em gestão de conflitos e direito das famílias com atuação na unidade Bahia."
+                        bio: "Mestre em Direito Tributário, com atuação na unidade Bahia voltada para o planejamento previdenciário e defesa do consumidor."
                     },
                 ].map((member, i) => (
                     <div key={i} className="card group p-0! overflow-hidden flex flex-col border-white/5">

@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #080808;
+  --color-background: #2d2d2d;
   --color-primary: #e5e5e5;
-  --color-primary-container: #121212;
+  --color-primary-container: #383838;
   --color-secondary: #c5a47e;
-  --color-surface: #080808;
-  --color-surface-container-low: #121212;
-  --color-surface-container-high: #1f1f1f;
-  --color-surface-container-highest: #262626;
-  --color-surface-container-lowest: #050505;
+  --color-surface: #2d2d2d;
+  --color-surface-container-low: #383838;
+  --color-surface-container-high: #454545;
+  --color-surface-container-highest: #4f4f4f;
+  --color-surface-container-lowest: #242424;
   --color-on-primary: #000000;
   --color-on-surface: #e5e5e5;
   --color-on-surface-variant: #888888;
@@ -48,8 +48,8 @@
 .nav-link:hover { color: #fff; }
 
 .card { 
-  background: #121212 !important; 
-  border: 1px solid #1f1f1f !important; 
+  background: #383838 !important; 
+  border: 1px solid #454545 !important; 
   padding: 24px !important; 
   border-radius: 4px !important; 
 }
@@ -62,7 +62,7 @@
 }
 
 .glass-obsidian {
-  background: rgba(8, 8, 8, 0.7);
+  background: rgba(45, 45, 45, 0.7);
   backdrop-filter: blur(20px);
 }
 

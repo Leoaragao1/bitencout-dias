@@ -26,10 +26,10 @@ const AREAS = [
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
   },
   {
-    icon: <Briefcase />,
-    title: "Direito Societário",
-    details: "Constituição e estruturação de sociedades, governança corporativa, fusões, aquisições e proteção de sócios.",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800"
+    icon: <Gavel />,
+    title: "Direito Penal",
+    details: "Assessoria jurídica altamente qualificada, pautada na análise minuciosa de cada caso e na construção de soluções defensivas consistentes, sempre orientadas pelo devido processo legal, pelo contraditório e pela ampla defesa.",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
   },
   {
     icon: <ShieldCheck />,

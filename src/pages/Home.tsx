@@ -27,10 +27,10 @@ const SERVICES = [
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
   },
   {
-    icon: <Briefcase className="w-6 h-6" />,
-    title: "Direito Societário",
-    desc: "Estruturação de holdings, governança corporativa e proteção de sócios.",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800"
+    icon: <Gavel className="w-6 h-6" />,
+    title: "Direito Penal",
+    desc: "Defesa criminal estratégica, pautada no contraditório e na ampla defesa.",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800"
   },
   {
     icon: <ShieldCheck className="w-6 h-6" />,
