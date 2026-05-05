@@ -28,8 +28,8 @@ const SERVICES = [
   },
   {
     icon: <Briefcase className="w-6 h-6" />,
-    title: "Direito Societário",
-    desc: "Estruturação de holdings, governança corporativa e proteção de sócios.",
+    title: "Direito Penal",
+    desc: "Assessoria jurídica altamente qualificada, pautada na análise minuciosa de cada caso e na construção de soluções defensivas consistentes, sempre orientadas pelo devido processo legal, pelo contraditório e pela ampla defesa.",
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800"
   },
   {
